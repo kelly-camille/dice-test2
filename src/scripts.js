@@ -36,7 +36,7 @@ Player.prototype.currentSum = function() {
 }
 
 Player.prototype.sum = function() {  //(Local-var 'totalPoints' modified to 'totalPts' for revision/clarification of Test 1.)
- this.totalPts = this.totalPts;
+  this.totalPts = this.totalPts;
   for (let i = 0; i < this.currentTotal.length; i++) {
     this.totalPts += this.currentTotal[i];
   }
@@ -50,9 +50,9 @@ Player.prototype.sum = function() {  //(Local-var 'totalPoints' modified to 'tot
 //   this.totalPts = variable; //Initializes this field to start at 0. 
 // } 
 
-function Game(player1, player2) {
-  this.firstPlayer = player1
-  this.secondPlayer = player2
+export function Game(player1, player2) {
+  this.firstPlayer = player1;
+  this.secondPlayer = player2;
   this.activePlayer = 1;
 }
 
