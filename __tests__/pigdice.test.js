@@ -9,8 +9,8 @@
 //     expect(triangle.side3).toEqual(5);
 //   });
 
-import { Game } from "./../src/scripts.js";
-import { Player } from "./../src/scripts.js";
+import { Game } from "./../src/triangle.js";
+import { Player } from "./../src/triangle.js";
 
 describe('Player', () => {
 
@@ -55,11 +55,15 @@ describe ('Game', () => {
     player1 = new Player(name1, variable);
     player2 = new Player(name2, variable);
     game = new Game (player1, player2);
-  })
+  });
   
   test ('Holds two player objects', () => {
     expect(game.firstPlayer.name).toEqual("Kelly");
     expect(game.secondPlayer.name).toEqual("Sam");
   });
+  // test ("Should change players' turns", () => {
+  //   expect(game.changeTurn()).toEqual("Sam");
+  //   expect(game.changeTurn()).toEqual("Kelly");
+  // });
 });
 
